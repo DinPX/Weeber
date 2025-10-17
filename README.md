@@ -1,5 +1,5 @@
 # Weeber
-An imageboard test with Godot and Gelbooru's 'API.
+An imageboard test with Godot and Gelbooru's API.
 
 ![preview](preview.png)
 
