@@ -1,11 +1,13 @@
 [gd_scene load_steps=2 format=2]
 
-[ext_resource path="res://Thumbnail.gd" type="Script" id=1]
+[ext_resource path="res://Scripts/Thumbnail.gd" type="Script" id=1]
 
 [node name="Thumbnail" type="VBoxContainer"]
 light_mask = 0
-anchor_right = 0.23625
-anchor_bottom = 0.378125
+anchor_right = 0.225
+anchor_bottom = 0.344
+margin_bottom = -0.160004
+rect_min_size = Vector2( 180, 220 )
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": true
@@ -13,20 +15,22 @@ __meta__ = {
 
 [node name="Image" type="TextureButton" parent="."]
 light_mask = 0
-margin_right = 189.0
-margin_bottom = 216.0
+margin_right = 180.0
+margin_bottom = 196.0
+rect_min_size = Vector2( 180, 196 )
 mouse_default_cursor_shape = 2
-size_flags_horizontal = 3
 size_flags_vertical = 3
+expand = true
+stretch_mode = 5
 
 [node name="Name" type="RichTextLabel" parent="."]
 light_mask = 0
-margin_top = 220.0
-margin_right = 189.0
-margin_bottom = 242.0
+margin_top = 200.0
+margin_right = 180.0
+margin_bottom = 220.0
+rect_min_size = Vector2( 180, 0 )
 rect_clip_content = false
 mouse_default_cursor_shape = 2
-size_flags_horizontal = 3
 size_flags_vertical = 3
 size_flags_stretch_ratio = 0.1
 custom_colors/default_color = Color( 0.121569, 0.443137, 0.831373, 1 )

@@ -25,3 +25,17 @@ func _init_directory(directory, path) -> bool:
 	else:
 		exists = true
 	return exists
+
+
+func _remove_temp_files() -> void:
+	var directory = Directory.new()
+	if directory.open("user://") == OK:
+		directory.list_dir_begin()
+		var file_name = directory.get_next()
+
+		while file_name != "":
+			if not directory.current_is_dir():
+				directory.remove("user://"+file_name)
+				file_name = directory.get_next()
+	else:
+		print("An error occurred when trying to access the path.")

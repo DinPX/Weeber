@@ -12,7 +12,7 @@ _global_script_classes=[ {
 "base": "VBoxContainer",
 "class": "Thumbnail",
 "language": "GDScript",
-"path": "res://Thumbnail.gd"
+"path": "res://Scripts/Thumbnail.gd"
 } ]
 _global_script_class_icons={
 "Thumbnail": ""
@@ -22,7 +22,7 @@ _global_script_class_icons={
 
 config/name="Weeber"
 config/description="A simple booru browser."
-run/main_scene="res://Main.tscn"
+run/main_scene="res://Scenes/Main.tscn"
 config/use_custom_user_dir=true
 config/custom_user_dir_name="Weeber"
 config/icon="res://icon.png"
